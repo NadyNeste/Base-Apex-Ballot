@@ -33,6 +33,8 @@ contract ApexBallot {
     }
 
     // 1. Создать тему для голосования
+/// @notice Creates a new voting proposal
+/// @dev Only authorized users can call this function
     function createProposal(string calldata title) external returns (uint256) {
         require(bytes(title).length > 0, "ApexBallot: Empty title");
 
