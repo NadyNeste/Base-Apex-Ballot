@@ -1,0 +1,7 @@
+# Build artifacts and sensitive data
+node_modules/
+artifacts/
+cache/
+typechain-types/
+.env.local
+.env
